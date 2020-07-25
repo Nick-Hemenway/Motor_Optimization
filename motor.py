@@ -95,6 +95,10 @@ class PM_Rotor():
         # self._set_magnet_materials()
         
     def set_materials(self, magnet, iron):
+        
+        #ensure that the materials are actually added to the analysis
+        magnet.add()
+        iron.add()
 
         R1 = self.OR - (self.dm + self.dri) #inner radius of rotor        
         R2 = self.OR - self.dm #radius to inside of PM
