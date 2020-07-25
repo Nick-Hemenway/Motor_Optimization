@@ -1,6 +1,5 @@
 import numpy as np
 import femm as fe
-from collections import namedtuple
 
 def rotate(x, y, theta):
     
